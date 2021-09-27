@@ -1,4 +1,5 @@
 # V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving
+Yiming Li, Zixun Wang, Ziyan An, Yiqi Zhong, Siheng Chen, Chen Feng
 
 This repository provides a PyTorch benchmark implementation of the paper [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving](https://openreview.net/forum?id=15UnJrBjh_L)
 
@@ -18,13 +19,6 @@ Vehicle-to-everything (V2X), which denotes the collaboration via communication b
 
 You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
 
-<div align="center">
-    <video>
-        <source src="https://ai4ce.github.io/V2X-Sim/img/Media1.mp4" type="video/mp4">
-    </video>
-</div>
-
-
 
 ## Requirements
 
@@ -39,7 +33,7 @@ Tested with:
 
 ## Benchmark
 
-We implement when2com, who2com, V2VNet, lowerbound and upperbound benchmark experiments on our datasets. You are welcome to go to [detection](./det), [segmentation](./seg) and [tracking](track) to find them.
+We implement when2com, who2com, V2VNet, lowerbound and upperbound benchmark experiments on our datasets. You are welcome to go to [detection](./det), [segmentation](./seg) and [tracking](track) to find more details.
 
 
 
