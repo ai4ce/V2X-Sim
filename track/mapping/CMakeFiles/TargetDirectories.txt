@@ -1,0 +1,3 @@
+/home/yimingli/when2com/PoseAwareCollaborativePerception/mapping/CMakeFiles/rebuild_cache.dir
+/home/yimingli/when2com/PoseAwareCollaborativePerception/mapping/CMakeFiles/mapping.dir
+/home/yimingli/when2com/PoseAwareCollaborativePerception/mapping/CMakeFiles/edit_cache.dir

@@ -19,7 +19,7 @@ Vehicle-to-everything (V2X), which denotes the collaboration via communication b
 You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
 
 <div align="center">
-    <video loop autoplay muted>
+    <video>
         <source src="https://ai4ce.github.io/V2X-Sim/img/Media1.mp4" type="video/mp4">
     </video>
 </div>
