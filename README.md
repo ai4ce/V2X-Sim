@@ -18,7 +18,7 @@ Vehicle-to-everything (V2X), which denotes the collaboration via communication b
 ## Dataset
 
 You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
-
+![dataset](https://ai4ce.github.io/V2X-Sim/img/SensorSetupNew.PNG)
 
 ## Requirements
 
