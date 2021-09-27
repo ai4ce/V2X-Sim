@@ -1,0 +1,3 @@
+/home/yimingli/object_det/data/mapping/CMakeFiles/rebuild_cache.dir
+/home/yimingli/object_det/data/mapping/CMakeFiles/edit_cache.dir
+/home/yimingli/object_det/data/mapping/CMakeFiles/mapping.dir

@@ -1,0 +1,196 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+Assembler messages:
+Fatal error: can't create CMakeCXXCompilerId.o: No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+c++: error: CMakeCXXCompilerId.cpp: No such file or directory
+c++: fatal error: no input files
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+c++: error: unrecognized command line option ‘--c++’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+c++: error: unrecognized command line option ‘--c++’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+c++: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+c++: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+c++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+c++: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+c++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+c++: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f2a6f/fast && make: *** No rule to make target 'cmTC_f2a6f/fast'.  Stop.
+
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7939f/fast && make[1]: Entering directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_7939f.dir/build.make CMakeFiles/cmTC_7939f.dir/build
+make[2]: Entering directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+make[2]: CMakeFiles/cmTC_7939f.dir/build.make: No such file or directory
+make[2]: *** No rule to make target 'CMakeFiles/cmTC_7939f.dir/build.make'.  Stop.
+make[2]: Leaving directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_7939f/fast' failed
+make[1]: *** [cmTC_7939f/fast] Error 2
+make[1]: Leaving directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_33b7b/fast && make: *** No rule to make target 'cmTC_33b7b/fast'.  Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_92d90/fast && make[1]: Entering directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_92d90.dir/build.make CMakeFiles/cmTC_92d90.dir/build
+make[2]: Entering directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+make[2]: CMakeFiles/cmTC_92d90.dir/build.make: No such file or directory
+make[2]: *** No rule to make target 'CMakeFiles/cmTC_92d90.dir/build.make'.  Stop.
+make[2]: Leaving directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_92d90/fast' failed
+make[1]: *** [cmTC_92d90/fast] Error 2
+make[1]: Leaving directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" did not produce an executable in "/home/yimingli/object_det/data/mapping/CMakeFiles/3.18.0/CompilerIdC".
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+cc1: fatal error: CMakeCCompilerId.c: No such file or directory
+compilation terminated.
+
+
+Performing C++ SOURCE FILE Test HAS_FLTO failed with the following output:
+Change Dir: /home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1742e/fast && /usr/bin/make  -f CMakeFiles/cmTC_1742e.dir/build.make CMakeFiles/cmTC_1742e.dir/build
+make[1]: Entering directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1742e.dir/src.cxx.o
+/usr/bin/c++   -Wall -Wextra -DHAS_FLTO   -flto -fno-fat-lto-objects -o CMakeFiles/cmTC_1742e.dir/src.cxx.o -c /home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1742e
+/home/yimingli/anaconda3/envs/object_det/lib/python3.7/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1742e.dir/link.txt --verbose=1
+Error opening link script "CMakeFiles/cmTC_1742e.dir/link.txt"
+CMakeFiles/cmTC_1742e.dir/build.make:105: recipe for target 'cmTC_1742e' failed
+make[1]: *** [cmTC_1742e] Error 1
+make[1]: Leaving directory '/home/yimingli/object_det/data/mapping/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_1742e/fast' failed
+make: *** [cmTC_1742e/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
