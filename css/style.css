@@ -59,203 +59,333 @@ img.img-polaroid {
     max-width: 100%;
 }
 
-figcaption {
-    background-color: white;
-    color: black;
-    font-style: italic; 
-    font-size: 16px;
-    padding: 2px;
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.container-table100 {
+width: 100%;
+min-height: 0vh;
+/*background: #c850c0;
+background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+background: linear-gradient(45deg, #4158d0, #c850c0);*/
+
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 33px 30px;
+}
+  
+.wrap-table100 {
+width: 1170px;
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  table * {
+    position: relative;
+  }
+  table td, table th {
+    padding-left: 8px;
+  }
+  table thead tr {
+    height: 60px;
+    background: #06091D;
+  }
+  table tbody tr {
+    height: 50px;
+  }
+  table tbody tr:last-child {
+    border: 0;
+  }
+  table td, table th {
+    text-align: left;
+  }
+  table td.l, table th.l {
+    text-align: right;
+  }
+  table td.c, table th.c {
     text-align: center;
   }
+  table td.r, table th.r {
+    text-align: center;
+  }
+  
+  
+  .table100-head th{
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+  }
+  
+  tbody tr:hover {
+    color: #555555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .column1 {
+    width: 260px;
+    padding-left: 40px;
+  }
+  
+  .column2 {
+    width: 160px;
+  }
+  
+  .column3 {
+    width: 245px;
+  }
+  
+  .column4 {
+    width: 110px;
+    text-align: right;
+  }
+  
+  .column5 {
+    width: 170px;
+    text-align: right;
+  }
+  
+  .column6 {
+    width: 222px;
+    text-align: right;
+    padding-right: 62px;
+  }
+
+figcaption {
+background-color: white;
+color: black;
+font-style: italic; 
+font-size: 16px;
+padding: 2px;
+text-align: center;
+}
 
 .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+display: block;
+width: 100%;
+height: auto;
+}
 
-  .frame {
-    height: 120px; /*can be anything*/
-    width: 120px; /*can be anything*/
-    display: inline-block;
-    vertical-align: top; /*not required*/
-    position: relative;
-  }
+.frame {
+height: 120px; /*can be anything*/
+width: 120px; /*can be anything*/
+display: inline-block;
+vertical-align: top; /*not required*/
+position: relative;
+}
 
-  .frame-s {
-    height: 180px; /*can be anything*/
-    width: 180px; /*can be anything*/
-    display: inline-block;
-    vertical-align: top; /*not required*/
-    position: relative;
-    object-fit: contain;
-  }
-  .frame-r {
-    height: 180px; /*can be anything*/
-    width: 275px; /*can be anything*/
-    display: inline-block;
-    vertical-align: top; /*not required*/
-    position: relative;
-  }
+.frame-s {
+height: 180px; /*can be anything*/
+width: 180px; /*can be anything*/
+display: inline-block;
+vertical-align: top; /*not required*/
+position: relative;
+object-fit: contain;
+}
+.frame-r {
+height: 180px; /*can be anything*/
+width: 275px; /*can be anything*/
+display: inline-block;
+vertical-align: top; /*not required*/
+position: relative;
+}
 
-  .frame-l {
-    height: 160px; /*can be anything*/
-    width: 203px; /*can be anything*/
-    display: inline-block;
-    vertical-align: top; /*not required*/
-    position: relative;
-  }
+.frame-l {
+height: 160px; /*can be anything*/
+width: 203px; /*can be anything*/
+display: inline-block;
+vertical-align: top; /*not required*/
+position: relative;
+}
 
-  .frame-h {
-    height: 160px; /*can be anything*/
-    width: 160px; /*can be anything*/
-    display: inline-block;
-    vertical-align: top; /*not required*/
-    position: relative;
-  }
+.frame-h {
+height: 160px; /*can be anything*/
+width: 160px; /*can be anything*/
+display: inline-block;
+vertical-align: top; /*not required*/
+position: relative;
+}
 
-  .frame div{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: black;
-    color: white;
-    margin-bottom: 0px;
-    font-family: sans-serif;
-    font-size: 16px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
-   }
+.frame div{
+position: absolute;
+bottom: 0;
+right: 0;
+background: black;
+color: white;
+margin-bottom: 0px;
+font-family: sans-serif;
+font-size: 16px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: visibility 0s, opacity 0.5s linear; 
+transition: visibility 0s, opacity 0.5s linear;
+}
 
-   .frame-l div, .frame-r div{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: black;
-    color: white;
-    margin-bottom: 0px;
-    font-family: sans-serif;
-    font-size: 16px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
-   }
+.frame-l div, .frame-r div{
+position: absolute;
+bottom: 0;
+right: 0;
+background: black;
+color: white;
+margin-bottom: 0px;
+font-family: sans-serif;
+font-size: 16px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: visibility 0s, opacity 0.5s linear; 
+transition: visibility 0s, opacity 0.5s linear;
+}
 
-   .frame-h div{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: black;
-    color: white;
-    margin-bottom: 0px;
-    font-family: sans-serif;
-    font-size: 16px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
-   }
-   
-   /* Hover on Parent Container */
-   .frame:hover, .frame-r:hover{
-    cursor: pointer;
-   }
-    /* Hover on Parent Container */
-    .frame-l:hover{
+.frame-h div{
+position: absolute;
+bottom: 0;
+right: 0;
+background: black;
+color: white;
+margin-bottom: 0px;
+font-family: sans-serif;
+font-size: 16px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: visibility 0s, opacity 0.5s linear; 
+transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.frame:hover, .frame-r:hover{
+cursor: pointer;
+}
+/* Hover on Parent Container */
+.frame-l:hover{
+cursor: pointer;
+}
+
+.frame-h:hover{
     cursor: pointer;
     }
 
-    .frame-h:hover{
-        cursor: pointer;
-        }
+.frame span {
+font-family: arial, sans-serif;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+color: white;
+background: rgba(0,0,0,0.4);
+font-size: 16px;
+}
 
-   .frame span {
-    font-family: arial, sans-serif;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: white;
-    background: rgba(0,0,0,0.4);
-    font-size: 16px;
-  }
-   
-   .frame:hover div{
-    width: 120px;
-    text-align: center;
-    height: 30px;
-    font-size: 14px;
-    /*padding: 1px 1px 1px 1px;*/
-    visibility: visible;
-    opacity: 0.6; 
-   }
+.frame:hover div{
+width: 120px;
+text-align: center;
+height: 30px;
+font-size: 14px;
+/*padding: 1px 1px 1px 1px;*/
+visibility: visible;
+opacity: 0.6; 
+}
 
-   .frame-l:hover div{
-    width: 203px;
-    text-align: center;
-    height: 30px;
-    visibility: visible;
-    font-size: 14px;
-    opacity: 0.6; 
-    bottom: 22.5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-   }
+.frame-l:hover div{
+width: 203px;
+text-align: center;
+height: 30px;
+visibility: visible;
+font-size: 14px;
+opacity: 0.6; 
+bottom: 22.5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
 
-   .frame-h:hover div{
-    width: 160px;
-    text-align: center;
-    height: 30px;
-    font-size: 14px;
-    visibility: visible;
-    opacity: 0.6; 
-    bottom: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-   }
+.frame-h:hover div{
+width: 160px;
+text-align: center;
+height: 30px;
+font-size: 14px;
+visibility: visible;
+opacity: 0.6; 
+bottom: 0px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
 
-   .frame-r:hover div{
-    width: 275px;
-    text-align: center;
-    height: 30px;
-    font-size: 14px;
-    visibility: visible;
-    opacity: 0.6; 
-    bottom: 12.5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-   }
-  
-  .img-valign {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+.frame-r:hover div{
+width: 275px;
+text-align: center;
+height: 30px;
+font-size: 14px;
+visibility: visible;
+opacity: 0.6; 
+bottom: 12.5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
 
-  .img-valign-shadow {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    box-shadow: 0 0 20px #ccc;
-    border-radius:10px;
+.img-valign {
+max-height: 100%;
+max-width: 100%;
+width: auto;
+height: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+.img-valign-shadow {
+max-height: 100%;
+max-width: 100%;
+width: auto;
+height: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+box-shadow: 0 0 20px #ccc;
+border-radius:10px;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
   }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
