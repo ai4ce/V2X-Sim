@@ -1,0 +1,6 @@
+@InProceedings{Li_2021_NeurIPS,
+      title = {Learning Distilled Collaboration Graph for Multi-Agent Perception},
+      author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun},
+      booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
+      year = {2021}
+}
