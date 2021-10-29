@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -Wall -Wextra -O3  -shared  -o /home/yimingli/when2com/PoseAwareCollaborativePerception/mapping.cpython-37m-x86_64-linux-gnu.so CMakeFiles/mapping.dir/mapping.cpp.o -flto 
