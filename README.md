@@ -2,7 +2,7 @@
 
 [Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Zixun Wang](), [Ziyan An](https://ziyanan.github.io/), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129/), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
 
-This repository provides a PyTorch benchmark implementation of the paper [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving]()
+**[NOTICE]** This repository provides a PyTorch benchmark implementation of our ongoing work [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving](). We currently release **V2X-Sim 1.0** with LiDAR-based V2V data which is pubished as part of [**DiscoNet**](https://github.com/ai4ce/DiscoNet). V2X-Sim 2.0 with multi-modal multi-agent V2X data will be released soon.
 
 <div align="center">
     <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/overview.PNG" width="250" height="120"> 
@@ -19,7 +19,7 @@ Vehicle-to-everything (V2X), which denotes the collaboration via communication b
 ## Dataset
 
 You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
-![dataset](https://ai4ce.github.io/V2X-Sim/img/SensorSetupNew.PNG). We currently release V2X-Sim 1.0 with LiDAR-based V2V data, and V2X-Sim 1.0 is pubished as part of [**DiscoNet**](https://github.com/ai4ce/DiscoNet). V2X-Sim 2.0 with multi-modal multi-agent V2X data will be released soon.
+![dataset](https://ai4ce.github.io/V2X-Sim/img/SensorSetupNew.PNG). 
 
 ## Requirements
 
@@ -29,7 +29,6 @@ Tested with:
 - PyTorch 1.8.0
 - Torchvision 0.9.0
 - CUDA 11.2
-
 
 
 ## Benchmark
