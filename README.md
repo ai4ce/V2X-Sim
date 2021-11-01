@@ -1,12 +1,13 @@
 # V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving
-Yiming Li, Zixun Wang, Ziyan An, Yiqi Zhong, Siheng Chen, Chen Feng
 
-This repository provides a PyTorch benchmark implementation of the paper [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving](https://openreview.net/forum?id=15UnJrBjh_L)
+[Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Zixun Wang](), [Ziyan An](https://ziyanan.github.io/), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129/), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
+
+This repository provides a PyTorch benchmark implementation of the paper [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving]()
 
 <div align="center">
-    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/overview.PNG" width="200" height="120"> 
-    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/cars-1.PNG" width="200" height="120"> 
-    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/infra-1.PNG" width="200" height="120">
+    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/overview.PNG" width="250" height="120"> 
+    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/cars-1.PNG" width="250" height="120"> 
+    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/infra-1.PNG" width="250" height="120">
 </div>
 
 ## Abstract
@@ -18,7 +19,7 @@ Vehicle-to-everything (V2X), which denotes the collaboration via communication b
 ## Dataset
 
 You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
-![dataset](https://ai4ce.github.io/V2X-Sim/img/SensorSetupNew.PNG)
+![dataset](https://ai4ce.github.io/V2X-Sim/img/SensorSetupNew.PNG). We currently release V2X-Sim 1.0 with LiDAR-based V2V data, and V2X-Sim 1.0 is pubished as part of [**DiscoNet**](https://github.com/ai4ce/DiscoNet). V2X-Sim 2.0 with multi-modal multi-agent V2X data will be released soon.
 
 ## Requirements
 
@@ -49,9 +50,12 @@ We are very grateful to multiple great opensourced codebases, without which this
 
 ## Citation
 
-If you find V2XSIM useful in your research, please cite:
-
-```tex
-
+If you find V2X-Sim 1.0 useful in your research, please cite our paper.
 ```
-
+@InProceedings{Li_2021_NeurIPS,
+    title = {Learning Distilled Collaboration Graph for Multi-Agent Perception},
+    author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun},
+    booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
+    year = {2021}
+}
+```
