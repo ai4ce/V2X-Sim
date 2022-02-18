@@ -57,4 +57,11 @@ If you find V2X-Sim 1.0 useful in your research, please cite our paper.
     booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
     year = {2021}
 }
+
+@InProceedings{Li_2021_ICCVW,
+    title = {V2X-Sim: A Virtual Collaborative Perception Dataset for Autonomous Driving},
+    author = {Li, Yiming and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)},
+    year = {2021}
+}
 ```
