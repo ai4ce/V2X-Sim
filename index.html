@@ -83,7 +83,7 @@
                         </video>
                         <div class="flex-caption wow fadeInLeft animated" data-wow-animation-name="none">
                             <h3>V2X-Sim</h3>
-                            <p> <b> A Large-scale Comprehensive Multi-agent Perception Dataset </b> </p>
+                            <p> <b> A Comprehensive Synthetic Multi-agent Perception Dataset </b> </p>
                         </div>
                     </li>
                 </ul>
@@ -98,16 +98,19 @@
                             <div class="about-logo">
                                 <h2 style="color: white;">About V2X-Sim</span></h2>
                                 <p style="font-size:16px">
-                                    V2X-Sim, short for <em>vehicle-to-everything simulation</em>, is the first synthetic collaborative perception dataset in autonomous 
-                                    driving developed by AI4CE Lab at NYU and MediaBrain Group at SJTU to facilitate collaborative perception between multiple 
-                                    vehicles and roadside infrastructure. We collect data from both roadside and vehicles when they are presented near the same
-                                    intersection. With information from both the roadside infrastructure and vehicles, the dataset aims to encourage research on 
-                                    collaborative perception tasks.
+                                    V2X-Sim, short for <em>vehicle-to-everything simulation</em>, is the first synthetic V2X-aided collaborative 
+                                    perception dataset in autonomous driving developed by AI4CE Lab at NYU and MediaBrain Group at SJTU to stimulate 
+                                    multi-agent multi-modality multi-task perception research. Due to the immaturity of V2X and the cost of simultaneously 
+                                    operating multiple autonomous vehicles, it is very expensive and laborious to build such a real-world dataset for 
+                                    research communities. Therefore, we use highly realistic  CARLA-SUMO co-simulation to ensure the representativeness 
+                                    of our dataset compared to real-world driving scenarios.
                                 </p>
                                 <p style="font-size:16px"> 
-                                    Although not collected from the real world, we use highly realistic traffic simulation software to ensure the representativeness 
-                                    of our dataset compared to real-world driving scenarios. To be more exact, the traffic flow of our recording files is managed by 
-                                    <em>CARLA-SUMO co-simulation</em>, and we currently use three town maps from CARLA to increase the diversity of our dataset.
+                                    V2X-Sim provides: (1) well-synchronized sensor recordings from road-side unit (RSU) and multiple vehicles that enable 
+                                    multi-agent perception, (2) multi-modality sensor streams that facilitate multi-modality perception, and (3) diverse 
+                                    well-annotated ground truths that support various perception tasks including detection, tracking, and segmentation. 
+                                    Meanwhile, we build an open-source testbed and provide a benchmark for the state-of-the-art collaborative perception 
+                                    algorithms on three tasks, including detection, tracking and segmentation.
                                 </p>
 
                             </div>
