@@ -1,25 +1,45 @@
 # V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving
 
-[Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Zixun Wang](), [Ziyan An](https://ziyanan.github.io/), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129/), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
-
-**[NOTICE]** This repository provides a PyTorch benchmark implementation of our ongoing work [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving](). We currently release **V2X-Sim 1.0** with LiDAR-based V2V data which is pubished as part of [**DiscoNet**](https://github.com/ai4ce/DiscoNet). V2X-Sim 2.0 with multi-modal multi-agent V2X data will be released soon.
+This repository provides a PyTorch benchmark implementation of the paper [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving](https://openreview.net/forum?id=15UnJrBjh_L)
 
 <div align="center">
-    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/overview.PNG" width="250" height="120"> 
-    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/cars-1.PNG" width="250" height="120"> 
-    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/infra-1.PNG" width="250" height="120">
+    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/overview.PNG" width="200" height="120"> 
+    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/cars-1.PNG" width="200" height="120"> 
+    <img src="https://ai4ce.github.io/V2X-Sim/img/multi-agent/infra-1.PNG" width="200" height="120">
 </div>
 
 ## Abstract
 
-Vehicle-to-everything (V2X), which denotes the collaboration via communication between a vehicle and any entity in its surrounding, can fundamentally improve the perception in self-driving systems. As the single-agent perception rapidly advances, collaborative perception has made little progress due to the shortage of public V2X datasets. In this work, we present V2X-Sim, the first public large-scale collaborative perception dataset in autonomous driving. V2X-Sim provides: 1) well-synchronized recordings from roadside infrastructure and multiple vehicles at the intersection to enable collaborative perception, 2) multi-modality sensor streams to facilitate multi-modality perception, and 3) diverse well-annotated ground truth to support various downstream tasks including detection, tracking, and segmentation. We seek to inspire research on multi-agent multi-modality multi-task perception, and our virtual dataset is promising to promote the development of collaborative perception before realistic datasets become widely available.
+Vehicle-to-everything (V2X) communication techniques enable the collaboration between a vehicle and any other entity in its surrounding, which could fundamentally improve
+the perception system for autonomous driving. However, the
+lack of a public dataset significantly restricts the research
+progress of collaborative perception. To fill this gap, we present
+V2X-Sim, a comprehensive simulated multi-agent perception
+dataset for V2X-aided autonomous driving. V2X-Sim provides:
+(1) well-synchronized sensor recordings from road-side unit
+(RSU) and multiple vehicles that enable multi-agent perception,
+(2) multi-modality sensor streams that facilitate multi-modality
+perception, and (3) diverse well-annotated ground truths that
+support various perception tasks including detection, tracking,
+and segmentation. Meanwhile, we build an open-source testbed
+and provide a benchmark for the state-of-the-art collaborative
+perception algorithms on three tasks, including detection, tracking and segmentation. V2X-Sim seeks to stimulate collaborative
+perception research for autonomous driving before realistic
+datasets become widely available.
 
 
 
 ## Dataset
 
 You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
-![dataset](https://ai4ce.github.io/V2X-Sim/img/SensorSetupNew.PNG). 
+
+<div align="center">
+    <video loop autoplay muted>
+        <source src="https://ai4ce.github.io/V2X-Sim/img/Media1.mp4" type="video/mp4">
+    </video>
+</div>
+
+
 
 ## Requirements
 
@@ -31,9 +51,10 @@ Tested with:
 - CUDA 11.2
 
 
+
 ## Benchmark
 
-We implement when2com, who2com, V2VNet, lowerbound and upperbound benchmark experiments on our datasets. You are welcome to go to [detection](./det), [segmentation](./seg) and [tracking](track) to find more details.
+We implement when2com, who2com, V2VNet, lowerbound and upperbound benchmark experiments on our datasets. You are welcome to go to [detection](./det), [segmentation](./seg) and [tracking](track) to find them.
 
 
 
@@ -49,19 +70,14 @@ We are very grateful to multiple great opensourced codebases, without which this
 
 ## Citation
 
-If you find V2X-Sim 1.0 useful in your research, please cite our paper.
-```
-@InProceedings{Li_2021_NeurIPS,
-    title = {Learning Distilled Collaboration Graph for Multi-Agent Perception},
-    author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun},
-    booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
-    year = {2021}
-}
+If you find V2XSIM useful in your research, please cite:
 
-@InProceedings{Li_2021_ICCVW,
-    title = {V2X-Sim: A Virtual Collaborative Perception Dataset for Autonomous Driving},
-    author = {Li, Yiming and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)},
-    year = {2021}
+```tex
+@InProceedings{Li_2021_NeurIPS,
+    title = {Learning Distilled Collaboration Graph for Multi-Agent Perception},
+    author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun},
+    booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
+    year = {2021}
 }
 ```
+
