@@ -1,0 +1,12 @@
+numpy
+torch
+opencv-python
+torchvision
+typing
+nuscenes-devkit==1.0.9
+pyquaternion
+numba
+matplotlib
+mmcv
+terminaltables
+shapely
