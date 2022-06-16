@@ -29,13 +29,11 @@ datasets become widely available.
 
 ## Dataset
 
-You could find more detailed documents and the download link in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
+Download links:
+- Original dataset: [Google Drive (US)](https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa)  
+- Parsed datasets for detection and segmentation tasks and model checkpoints: [Google Drive (US)](https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing)   
 
-<div align="center">
-    <video loop autoplay muted>
-        <source src="https://ai4ce.github.io/V2X-Sim/img/Media1.mp4" type="video/mp4">
-    </video>
-</div>
+You could find more detailed documents in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
 
 
 
