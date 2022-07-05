@@ -1,10 +1,17 @@
 # V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving
 
-This repository provides a PyTorch benchmark implementation of the paper [V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving](https://openreview.net/forum?id=15UnJrBjh_L)
+[Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Dekun Ma](https://github.com/ShunliRen), [Ziyan An](https://ziyanan.github.io/), [Zixun Wang](), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
+
+**''A comprehensive multi-agent multi-modal multi-task 3D perception dataset for autonomous driving.''**
 
 <div align="center">
     <img src="https://s2.loli.net/2022/06/15/cbs6hS2NHT7pDPL.png" height="300">
 </div>
+
+## News
+**[2022-07]**  Our paper will be available soon.
+
+**[2022-07]**  🔥 V2X-Sim is accepted at **IEEE Robotics and Automation Letters (RA-L)**.
 
 ## Abstract
 
@@ -68,11 +75,11 @@ We are very grateful to multiple great opensourced codebases, without which this
 If you find V2XSIM useful in your research, please cite:
 
 ```tex
-@InProceedings{Li_2021_NeurIPS,
-    title = {Learning Distilled Collaboration Graph for Multi-Agent Perception},
-    author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun},
-    booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
-    year = {2021}
+@article{Li_2021_RAL,
+    title = {V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving},
+    author = {Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
+    booktitle = {IEEE Robotics and Automation Letters},
+    year = {2022}
 }
 ```
 
