@@ -11,7 +11,7 @@
 ## News
 **[2022-07]**  Our paper will be available soon.
 
-**[2022-07]**  🔥 V2X-Sim is accepted at **IEEE Robotics and Automation Letters (RA-L)**.
+**[2022-06]**  🔥 V2X-Sim is accepted at **IEEE Robotics and Automation Letters (RA-L)**.
 
 ## Abstract
 
