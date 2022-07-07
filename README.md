@@ -1,8 +1,8 @@
 # V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving
 
-[Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Dekun Ma](https://github.com/ShunliRen), [Ziyan An](https://ziyanan.github.io/), [Zixun Wang](), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
+[Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Dekun Ma](https://dekun.me), [Ziyan An](https://ziyanan.github.io/), [Zixun Wang](), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
 
-**''A comprehensive multi-agent multi-modal multi-task 3D perception dataset for autonomous driving.''**
+**"A comprehensive multi-agent multi-modal multi-task 3D perception dataset for autonomous driving."**
 
 <div align="center">
     <img src="https://s2.loli.net/2022/06/15/cbs6hS2NHT7pDPL.png" height="300">
@@ -40,8 +40,38 @@ Download links:
 - Original dataset: [Google Drive (US)](https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa)  
 - Parsed datasets for detection and segmentation tasks and model checkpoints: [Google Drive (US)](https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing)   
 
-You could find more detailed documents in our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
+You could find more detailed documents on our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
 
+V2X-Sim follows the same file structure as the [Nuscenes dataset](https://www.nuscenes.org/):
+```
+V2X-Sim
+├── maps # images for the map of one of the towns
+├── sweeps # sensor data
+|   ├── LIDAR_TOP_id_0 # top lidar data for the top camera, agent 0 (RSU)
+|   ├── LIDAR_TOP_id_1 # top lidar data for the top camera, agent 1
+|   ├── LIDAR_TOP_id_2 # top lidar data for the top camera, agent 2
+|   ...
+├── v1.0-mini # metadata
+|   ├── scene.json # metadata for all the scenes
+|   ├── sample.json # metadata for each sample, organized like linked-list
+|   ├── sample_annotation.json # sample annotation metadata for each scene
+|   ...
+```
+
+For parsed detection and segmentation dataset, the file structure will be:
+```
+V2X-Sim-det / V2X-Sim-seg
+├── train # training data
+|   ├── agent0 # data for RSU
+|   |   ├── 0_0 # scene 0, frame 0
+|   |   ├── 0_1 # scene 0, frame 1
+|   |   |   ...
+|   ├── agent1 # data for agent 1
+|   ...
+|   ├── agent5 # data for agent 5
+├── val # validation data
+├── test # test data
+```
 
 
 ## Requirements
