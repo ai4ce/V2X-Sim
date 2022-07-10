@@ -1,578 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>V2X-Sim - Download</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="http://webthemez.com" />
-<!-- css -->
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="css/jcarousel.css" rel="stylesheet" />
-<link href="css/flexslider.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://unpkg.com/listree/dist/listree.min.css"/>
- 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
+	<meta charset="utf-8">
+	<title>V2X-Sim - Download</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="http://webthemez.com" />
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/listree/dist/listree.min.css" />
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<style>
 		.collapsible-list {
-		  background-color: #777;
-		  color: white;
-		  cursor: pointer;
-		  padding: 18px;
-		  width: 100%;
-		  border: none;
-		  text-align: left;
-		  outline: none;
-		  font-size: 15px;
+			background-color: #777;
+			color: white;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
 		}
-		
-		.active-list, .collapsible-list:hover {
-		  /*background-color: #555;*/
+
+		.active-list,
+		.collapsible-list:hover {
+			/*background-color: #555;*/
 		}
-		
+
 		.collapsible-list:after {
-		  /*content: '\002B';*/
-		  color: white;
-		  font-weight: bold;
-		  float: right;
-		  margin-left: 5px;
+			/*content: '\002B';*/
+			color: white;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
 		}
-		
+
 		.active-list:after {
-		  /*content: "\2212";*/
+			/*content: "\2212";*/
 		}
-		
+
 		.content-collapse-list {
-		  padding: 0 18px;
-		  max-height: 0;
-		  overflow: hidden;
-		  transition: max-height 0.2s ease-out;
-		  background-color: #f1f1f1;
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
 		}
+
 		.content-collapse-list-shown {
-		  padding: 0 18px;
-		  max-height: 0;
-		  overflow: hidden;
-		  transition: max-height 0.2s ease-out;
-		  background-color: #f1f1f1;
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
 		}
-		</style>
+	</style>
 </head>
+
 <body>
-<div id="wrapper">
+	<div id="wrapper">
 
-	<!-- start header -->
+		<!-- start header -->
 		<header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img alt="logo" src=
-                        "img/logo-new.png" width="220" ></a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">About</a></li> 
-						<li><a href="data.html">Data</a></li>
-						<li>
-							<a href="tutorial.html">Tutorial</a>
-						</li>
-						<li><a href="benchmarks.html">Benchmarks</a></li>
-                        <li class="active"><a href="download.html">Download</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <!-- <li><a href="contact.html">Contact</a></li> -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-	</header><!-- end header -->
-	<section id="inner-headline">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2 class="pageTitle">Download</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="content">
-		<div class="container">
-		
-		<div class="row">
-			<div class="about wow animated">
-			<p style="font-size:16px">In this page, we provide download links to the datasets. 
-				Instructions on setting up and using the data is avaliable on the <a href="tutorial.html">tutorial</a> page. 
-			</p>
-
-			<p style="font-size:16px">Please send us an access request with your affiliation and role, and we will grant the access. </p>
-
-			<p style="font-size:16px">The complete directory tree structure of V2X-Sim 2.0 are listed below. However, you can <b>download any sensors of your choice</b> 
-				if you do not need the full dataset. For all subdirectories under 
-				<code>/V2X-Sim/sweeps</code>, folders with the name <code>id_0</code> contain data collected from the roadside unit, 
-				while folders with the name <code>id_1</code> to <code>id_5</code>
-				are data collected from the vehicles.  </p>
-				
-
-			<button class="collapsible-list" style="font-size:18px">V2X-Sim 1.0 (LiDAR-based V2V only)</button>
-			<div class="content-collapse-list" style="max-height:600px">
-			<div class="row">
-				<br>
-				
-				<div>
-					<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
-				
-						<ul style="font-size:16px">
-							<li><b>Used by:</b>
-								<ul>
-									<li>DiscoNet</li>
-								</ul>
-							</li>
-						</ul>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img alt="logo" src="img/logo-new.png"
+								width="220"></a>
 					</div>
-
-					<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-				
-						<ul style="font-size:16px" class="no-bullets">
-							<li> <br> </li>
-							<li><a href="https://github.com/ai4ce/DiscoNet">Github Repo</a></li>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-						<ul style="font-size:16px" class="no-bullets">
-							<li> <br> </li>
-							<li><a href="https://arxiv.org/pdf/2111.00643.pdf">Paper</a></li>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
-			
-					<ul style="font-size:16px">
-						<li><b>Sensor Data</b>
-							<ul>
-								<li>LiDAR</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-			
-					<ul style="font-size:16px" class="no-bullets">
-						<li><b>Download Link</b>
-						<li><a href="https://drive.google.com/file/d/1pPALvAwdMIZy1YcYIBuCGg9QTgYAM0l6/view?usp=sharing">US</a></li>
-						<li> <br> </li>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-					<ul style="font-size:16px" class="no-bullets">
-						<li><b>Size</b>
-						<li>16.5 GB</li>
-						</li>
-					</ul>
-				</div>
-			
-			
-				<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
-			
-					<ul style="font-size:16px">
-						<li><b>Metadata</b>
-							<ul>
-								<li>v1.0-mini</li>
-								<li>Maps</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-			
-					<ul style="font-size:16px" class="no-bullets">
-						<li> <br> </li>
-						<li><a href="https://drive.google.com/file/d/17y0E1QPwl3bKhZlnd0MztK1FukaTg02T/view?usp=sharing">US</a></li>
-						<li><a href="https://drive.google.com/file/d/1NyM2fJpkzDczZ7lW3Mdzid4bwhS7q92F/view?usp=sharing">US</a></li>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-					<ul style="font-size:16px" class="no-bullets">
-						<li> <br> </li>
-						<li>974.7 MB</li>
-						<li>344 KB</li>
-						</li>
-					</ul>
-				</div>
-			
-			</div></div>
-
-			<button class="collapsible-list" style="font-size:18px">V2X-Sim 2.0</button>
-			<div class="content-collapse-list" style="max-height:6000px">
-			<div class="row">
-				<br>
-				<div>
-					<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
-				
-						<ul style="font-size:16px">
-							<li><b>Used by:</b>
-								<ul>
-									<li>coperception</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-				
-						<ul style="font-size:16px" class="no-bullets">
-							<li> <br> </li>
-							<li><a href="https://github.com/coperception/coperception">Github Repo</a></li>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
-			
-					<ul style="font-size:16px">
-						<li><b>Full Dataset</b></li>
-						<ul class="listree no-bullets">
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">About</a></li>
+							<li><a href="data.html">Data</a></li>
 							<li>
-								<div class="listree-submenu-heading">V2X-Sim</div>
-								<ul class="listree-submenu-items">
-									<li>
-										<div class="listree-submenu-heading">lidarseg</div>
-										<ul class="listree-submenu-items">
-										<li>
-											<li>
-												v1.0-mini
-											</li>
-										</li>
-										
-										</ul>
-									</li>
-									<li>
-										<div class="listree-submenu-heading">maps</div>
-										<ul class="listree-submenu-items">
-											<li>Town03.jpg</li>
-											<li>Town03.jpg.pdf</li>
-											<li>Town04.jpg</li>
-											<li>Town04.jpg.pdf</li>
-											<li>Town05.jpg</li>
-											<li>Town05.jpg.pdf</li>
-										</ul>
-									</li>
-									<li>
-										<div class="listree-submenu-heading">sweeps</div>
-										<ul class="listree-submenu-items">
-											<li>BEV_TOP_id_0</li>
-											<li>BEV_TOP_id_1</li>
-											<li>BEV_TOP_id_2</li>
-											<li>BEV_TOP_id_3</li>
-											<li> BEV_TOP_id_4</li>
-											<li> BEV_TOP_id_5</li>
-											<li> CAM_BACK_id_1</li>
-											<li> CAM_BACK_id_2</li>
-											<li> CAM_BACK_id_3</li>
-											<li> CAM_BACK_id_4</li>
-											<li> CAM_BACK_id_5</li>
-											<li> CAM_BACK_LEFT_id_1</li>
-											<li> CAM_BACK_LEFT_id_2</li>
-											<li> CAM_BACK_LEFT_id_3</li>
-											<li> CAM_BACK_LEFT_id_4</li>
-											<li> CAM_BACK_LEFT_id_5</li>
-											<li> CAM_BACK_RIGHT_id_1</li>
-											<li> CAM_BACK_RIGHT_id_2</li>
-											<li> CAM_BACK_RIGHT_id_3</li>
-											<li> CAM_BACK_RIGHT_id_4</li>
-											<li> CAM_BACK_RIGHT_id_5</li>
-											<li> CAM_FRONT_id_1</li>
-											<li> CAM_FRONT_id_2</li>
-											<li> CAM_FRONT_id_3</li>
-											<li> CAM_FRONT_id_4</li>
-											<li> CAM_FRONT_id_5</li>
-											<li> CAM_FRONT_LEFT_id_1</li>
-											<li> CAM_FRONT_LEFT_id_2</li>
-											<li> CAM_FRONT_LEFT_id_3</li>
-											<li> CAM_FRONT_LEFT_id_4</li>
-											<li> CAM_FRONT_LEFT_id_5</li>
-											<li> CAM_FRONT_RIGHT_id_1</li>
-											<li> CAM_FRONT_RIGHT_id_2</li>
-											<li> CAM_FRONT_RIGHT_id_3</li>
-											<li> CAM_FRONT_RIGHT_id_4</li>
-											<li> CAM_FRONT_RIGHT_id_5</li>
-											<li> CAM_id_0_0</li>
-											<li> CAM_id_0_1</li>
-											<li> CAM_id_0_2</li>
-											<li> CAM_id_0_3</li>
-											<li> DEP_BACK_id_1</li>
-											<li> DEP_BACK_id_2</li>
-											<li> DEP_BACK_id_3</li>
-											<li> DEP_BACK_id_4</li>
-											<li> DEP_BACK_id_5</li>
-											<li> DEP_BACK_LEFT_id_1</li>
-											<li> DEP_BACK_LEFT_id_2</li>
-											<li> DEP_BACK_LEFT_id_3</li>
-											<li> DEP_BACK_LEFT_id_4</li>
-											<li> DEP_BACK_LEFT_id_5</li>
-											<li> DEP_BACK_RIGHT_id_1</li>
-											<li> DEP_BACK_RIGHT_id_2</li>
-											<li> DEP_BACK_RIGHT_id_3</li>
-											<li> DEP_BACK_RIGHT_id_4</li>
-											<li> DEP_BACK_RIGHT_id_5</li>
-											<li> DEP_FRONT_id_1</li>
-											<li> DEP_FRONT_id_2</li>
-											<li> DEP_FRONT_id_3</li>
-											<li> DEP_FRONT_id_4</li>
-											<li> DEP_FRONT_id_5</li>
-											<li> DEP_FRONT_LEFT_id_1</li>
-											<li> DEP_FRONT_LEFT_id_2</li>
-											<li> DEP_FRONT_LEFT_id_3</li>
-											<li> DEP_FRONT_LEFT_id_4</li>
-											<li> DEP_FRONT_LEFT_id_5</li>
-											<li> DEP_FRONT_RIGHT_id_1</li>
-											<li> DEP_FRONT_RIGHT_id_2</li>
-											<li> DEP_FRONT_RIGHT_id_3</li>
-											<li> DEP_FRONT_RIGHT_id_4</li>
-											<li> DEP_FRONT_RIGHT_id_5</li>
-											<li> DEP_id_0_0</li>
-											<li> DEP_id_0_1</li>
-											<li> DEP_id_0_2</li>
-											<li> DEP_id_0_3</li>
-											<li> GNSS_TOP_id_1</li>
-											<li> GNSS_TOP_id_2</li>
-											<li> GNSS_TOP_id_3</li>
-											<li> GNSS_TOP_id_4</li>
-											<li> GNSS_TOP_id_5</li>
-											<li> IMU_TOP_id_1</li>
-											<li> IMU_TOP_id_2</li>
-											<li> IMU_TOP_id_3</li>
-											<li> IMU_TOP_id_4</li>
-											<li> IMU_TOP_id_5</li>
-											<li> LIDAR_TOP_id_0</li>
-											<li> LIDAR_TOP_id_1</li>
-											<li> LIDAR_TOP_id_2</li>
-											<li> LIDAR_TOP_id_3</li>
-											<li> LIDAR_TOP_id_4</li>
-											<li> LIDAR_TOP_id_5</li>
-											<li> SEG_BACK_id_1</li>
-											<li> SEG_BACK_id_2</li>
-											<li> SEG_BACK_id_3</li>
-											<li> SEG_BACK_id_4</li>
-											<li> SEG_BACK_id_5</li>
-											<li> SEG_BACK_LEFT_id_1</li>
-											<li> SEG_BACK_LEFT_id_2</li>
-											<li> SEG_BACK_LEFT_id_3</li>
-											<li> SEG_BACK_LEFT_id_4</li>
-											<li> SEG_BACK_LEFT_id_5</li>
-											<li> SEG_BACK_RIGHT_id_1</li>
-											<li> SEG_BACK_RIGHT_id_2</li>
-											<li> SEG_BACK_RIGHT_id_3</li>
-											<li> SEG_BACK_RIGHT_id_4</li>
-											<li> SEG_BACK_RIGHT_id_5</li>
-											<li> SEG_FRONT_id_1</li>
-											<li> SEG_FRONT_id_2</li>
-											<li> SEG_FRONT_id_3</li>
-											<li> SEG_FRONT_id_4</li>
-											<li> SEG_FRONT_id_5</li>
-											<li> SEG_FRONT_LEFT_id_1</li>
-											<li> SEG_FRONT_LEFT_id_2</li>
-											<li> SEG_FRONT_LEFT_id_3</li>
-											<li> SEG_FRONT_LEFT_id_4</li>
-											<li> SEG_FRONT_LEFT_id_5</li>
-											<li> SEG_FRONT_RIGHT_id_1</li>
-											<li> SEG_FRONT_RIGHT_id_2</li>
-											<li> SEG_FRONT_RIGHT_id_3</li>
-											<li> SEG_FRONT_RIGHT_id_4</li>
-											<li> SEG_FRONT_RIGHT_id_5</li>
-											<li> SEG_id_0_0</li>
-											<li> SEG_id_0_1</li>
-											<li> SEG_id_0_2</li>
-											<li> SEG_id_0_3</li>
-											<li> SEMLIDAR_TOP_id_0</li>
-											<li> SEMLIDAR_TOP_id_1</li>
-											<li> SEMLIDAR_TOP_id_2</li>
-											<li> SEMLIDAR_TOP_id_3</li>
-											<li> SEMLIDAR_TOP_id_4</li>
-											<li>SEMLIDAR_TOP_id_5</li>
-
-										</ul>
-									</li>
-									<li>
-										<div class="listree-submenu-heading">v1.0-mini</div>
-										<ul class="listree-submenu-items">
-											<li> attribute.json</li>
-											<li> calibrated_sensor.json</li>
-											<li> category.json</li>
-											<li> ego_pose.json</li>
-											<li> instance.json</li>
-											<li> lidarseg.json</li>
-											<li> log.json</li>
-											<li> map.json</li>
-											<li> sample_annotation.json</li>
-											<li> sample_data.json</li>
-											<li> sample.json</li>
-											<li> scene.json</li>
-											<li> sensor.json</li>
-											<li>visibility.json</li>
-										</ul>
-									</li>
-								</ul>
+								<a href="tutorial.html">Tutorial</a>
 							</li>
-							
+							<li><a href="benchmarks.html">Benchmarks</a></li>
+							<li class="active"><a href="download.html">Download</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<!-- <li><a href="contact.html">Contact</a></li> -->
 						</ul>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-			
-					<ul style="font-size:16px" class="no-bullets">
-						<li><a href="https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa?usp=sharing">US</a></li>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-					<ul style="font-size:16px" class="no-bullets">
-						<!-- <li><b>Size</b> -->
-						<li>519 GB</li>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
-					<ul style="font-size:16px">
-						<li><b>Parsed datasets for detection and segmentation & model checkpoints</b></li>
-					</ul>
-				</div>
-
-				<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
-					<ul style="font-size:16px" class="no-bullets">
-						<li><a href="https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing">US</a></li>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-			</div>
-
-			<br>
-
-			<p style="font-size:16px"> If you find the dataset helpful, please consider citing us.</p>
-			
-			<p style="font-size:16px">
-			@InProceedings{Li_2021_NeurIPS, <br>
-				&emsp;&emsp;&emsp;&emsp;title = {Learning Distilled Collaboration Graph for Multi-Agent Perception}, <br>
-				&emsp;&emsp;&emsp;&emsp;author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun}, <br>
-				&emsp;&emsp;&emsp;&emsp;booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)}, <br>
-				&emsp;&emsp;&emsp;&emsp;year = {2021} <br>
-		  	}
-			  <br>
-			  @InProceedings{Li_2021_ICCVW,<br>
-				&emsp;&emsp;&emsp;&emsp;title = {V2X-Sim: A Virtual Collaborative Perception Dataset for Autonomous Driving},<br>
-				&emsp;&emsp;&emsp;&emsp;author = {Li, Yiming and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},<br>
-				&emsp;&emsp;&emsp;&emsp;booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)},<br>
-				&emsp;&emsp;&emsp;&emsp;year = {2021}<br>
-				}
-			</p>
-
-			</div>
-
-		
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<hr>
-		
-		</div>
-	</section>
-
-	
-</div>
-
-<footer>
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p><span>&copy; NYU AI4CE Lab 2021 All rights reserved.
-						</span> </p>
 					</div>
 				</div>
+			</div>
+		</header><!-- end header -->
+		<section id="inner-headline">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="pageTitle">Download</h2>
+					</div>
+				</div>
+			</div>
+		</section>
 
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li>
-							<a class="fa fa-github" data-placement=
-							"top" href="https://github.com/ai4ce/V2X-Sim" style="font-style: italic"
-							title="GitHub"></a>
-						</li>
-						<li>
-							<a class="fa fa-external-link" data-placement=
-							"top" href="https://ai4ce.github.io/" style="font-style: italic"
-							title="Lab Website"></a>
-						</li>
-						
-					</ul>
+		<section id="content">
+			<div class="container">
+
+				<div class="row">
+					<div class="about wow animated">
+						<p style="font-size:16px">In this page, we provide download links to the datasets.
+							Instructions on setting up and using the data is avaliable on the <a
+								href="tutorial.html">tutorial</a> page.
+						</p>
+
+						<p style="font-size:16px">Please send us an access request with your affiliation and role, and
+							we will grant the access. </p>
+
+						<p style="font-size:16px">The complete directory tree structure of V2X-Sim 2.0 are listed below.
+							However, you can <b>download any sensors of your choice</b>
+							if you do not need the full dataset. For all subdirectories under
+							<code>/V2X-Sim/sweeps</code>, folders with the name <code>id_0</code> contain data collected
+							from the roadside unit,
+							while folders with the name <code>id_1</code> to <code>id_5</code>
+							are data collected from the vehicles.
+						</p>
+
+
+						<button class="collapsible-list" style="font-size:18px">V2X-Sim 1.0 (LiDAR-based V2V
+							only)</button>
+						<div class="content-collapse-list" style="max-height:600px">
+							<div class="row">
+								<br>
+
+								<div class="row">
+									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px">
+											<li><b>Used by:</b>
+												<ul>
+													<li>DiscoNet</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px" class="no-bullets">
+											<li> <br> </li>
+											<li><a href="https://github.com/ai4ce/DiscoNet">Github Repo</a></li>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px" class="no-bullets">
+											<li> <br> </li>
+											<li><a href="https://arxiv.org/pdf/2111.00643.pdf">Paper</a></li>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px">
+											<li><b>Sensor Data</b>
+												<ul>
+													<li>LiDAR</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px" class="no-bullets">
+											<li><b>Download Link</b>
+											<li><a
+													href="https://drive.google.com/file/d/1pPALvAwdMIZy1YcYIBuCGg9QTgYAM0l6/view?usp=sharing">US</a>
+											</li>
+											<li> <br> </li>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px" class="no-bullets">
+											<li><b>Size</b>
+											<li>16.5 GB</li>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+
+								<div class="row">
+									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px">
+											<li><b>Metadata</b>
+												<ul>
+													<li>v1.0-mini</li>
+													<li>Maps</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px" class="no-bullets">
+											<li> <br> </li>
+											<li><a
+													href="https://drive.google.com/file/d/17y0E1QPwl3bKhZlnd0MztK1FukaTg02T/view?usp=sharing">US</a>
+											</li>
+											<li><a
+													href="https://drive.google.com/file/d/1NyM2fJpkzDczZ7lW3Mdzid4bwhS7q92F/view?usp=sharing">US</a>
+											</li>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px" class="no-bullets">
+											<li> <br> </li>
+											<li>974.7 MB</li>
+											<li>344 KB</li>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<button class="collapsible-list" style="font-size:18px">V2X-Sim 2.0</button>
+						<div class="content-collapse-list" style="max-height:6000px">
+							<div class="row">
+								<br>
+								<div class="row">
+									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px">
+											<li><b>Used by:</b>
+												<ul>
+													<li>coperception</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px" class="no-bullets">
+											<li> <br> </li>
+											<li><a href="https://github.com/coperception/coperception">Github Repo</a>
+											</li>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px">
+											<li><b>Full Dataset</b></li>
+											<ul class="listree no-bullets">
+												<li>
+													<div class="listree-submenu-heading">V2X-Sim</div>
+													<ul class="listree-submenu-items">
+														<li>
+															<div class="listree-submenu-heading">lidarseg</div>
+															<ul class="listree-submenu-items">
+																<li>
+																<li>
+																	v1.0-mini
+																</li>
+														</li>
+
+													</ul>
+												</li>
+												<li>
+													<div class="listree-submenu-heading">maps</div>
+													<ul class="listree-submenu-items">
+														<li>Town03.jpg</li>
+														<li>Town03.jpg.pdf</li>
+														<li>Town04.jpg</li>
+														<li>Town04.jpg.pdf</li>
+														<li>Town05.jpg</li>
+														<li>Town05.jpg.pdf</li>
+													</ul>
+												</li>
+												<li>
+													<div class="listree-submenu-heading">sweeps</div>
+													<ul class="listree-submenu-items">
+														<li>BEV_TOP_id_0</li>
+														<li>BEV_TOP_id_1</li>
+														<li>BEV_TOP_id_2</li>
+														<li>BEV_TOP_id_3</li>
+														<li> BEV_TOP_id_4</li>
+														<li> BEV_TOP_id_5</li>
+														<li> CAM_BACK_id_1</li>
+														<li> CAM_BACK_id_2</li>
+														<li> CAM_BACK_id_3</li>
+														<li> CAM_BACK_id_4</li>
+														<li> CAM_BACK_id_5</li>
+														<li> CAM_BACK_LEFT_id_1</li>
+														<li> CAM_BACK_LEFT_id_2</li>
+														<li> CAM_BACK_LEFT_id_3</li>
+														<li> CAM_BACK_LEFT_id_4</li>
+														<li> CAM_BACK_LEFT_id_5</li>
+														<li> CAM_BACK_RIGHT_id_1</li>
+														<li> CAM_BACK_RIGHT_id_2</li>
+														<li> CAM_BACK_RIGHT_id_3</li>
+														<li> CAM_BACK_RIGHT_id_4</li>
+														<li> CAM_BACK_RIGHT_id_5</li>
+														<li> CAM_FRONT_id_1</li>
+														<li> CAM_FRONT_id_2</li>
+														<li> CAM_FRONT_id_3</li>
+														<li> CAM_FRONT_id_4</li>
+														<li> CAM_FRONT_id_5</li>
+														<li> CAM_FRONT_LEFT_id_1</li>
+														<li> CAM_FRONT_LEFT_id_2</li>
+														<li> CAM_FRONT_LEFT_id_3</li>
+														<li> CAM_FRONT_LEFT_id_4</li>
+														<li> CAM_FRONT_LEFT_id_5</li>
+														<li> CAM_FRONT_RIGHT_id_1</li>
+														<li> CAM_FRONT_RIGHT_id_2</li>
+														<li> CAM_FRONT_RIGHT_id_3</li>
+														<li> CAM_FRONT_RIGHT_id_4</li>
+														<li> CAM_FRONT_RIGHT_id_5</li>
+														<li> CAM_id_0_0</li>
+														<li> CAM_id_0_1</li>
+														<li> CAM_id_0_2</li>
+														<li> CAM_id_0_3</li>
+														<li> DEP_BACK_id_1</li>
+														<li> DEP_BACK_id_2</li>
+														<li> DEP_BACK_id_3</li>
+														<li> DEP_BACK_id_4</li>
+														<li> DEP_BACK_id_5</li>
+														<li> DEP_BACK_LEFT_id_1</li>
+														<li> DEP_BACK_LEFT_id_2</li>
+														<li> DEP_BACK_LEFT_id_3</li>
+														<li> DEP_BACK_LEFT_id_4</li>
+														<li> DEP_BACK_LEFT_id_5</li>
+														<li> DEP_BACK_RIGHT_id_1</li>
+														<li> DEP_BACK_RIGHT_id_2</li>
+														<li> DEP_BACK_RIGHT_id_3</li>
+														<li> DEP_BACK_RIGHT_id_4</li>
+														<li> DEP_BACK_RIGHT_id_5</li>
+														<li> DEP_FRONT_id_1</li>
+														<li> DEP_FRONT_id_2</li>
+														<li> DEP_FRONT_id_3</li>
+														<li> DEP_FRONT_id_4</li>
+														<li> DEP_FRONT_id_5</li>
+														<li> DEP_FRONT_LEFT_id_1</li>
+														<li> DEP_FRONT_LEFT_id_2</li>
+														<li> DEP_FRONT_LEFT_id_3</li>
+														<li> DEP_FRONT_LEFT_id_4</li>
+														<li> DEP_FRONT_LEFT_id_5</li>
+														<li> DEP_FRONT_RIGHT_id_1</li>
+														<li> DEP_FRONT_RIGHT_id_2</li>
+														<li> DEP_FRONT_RIGHT_id_3</li>
+														<li> DEP_FRONT_RIGHT_id_4</li>
+														<li> DEP_FRONT_RIGHT_id_5</li>
+														<li> DEP_id_0_0</li>
+														<li> DEP_id_0_1</li>
+														<li> DEP_id_0_2</li>
+														<li> DEP_id_0_3</li>
+														<li> GNSS_TOP_id_1</li>
+														<li> GNSS_TOP_id_2</li>
+														<li> GNSS_TOP_id_3</li>
+														<li> GNSS_TOP_id_4</li>
+														<li> GNSS_TOP_id_5</li>
+														<li> IMU_TOP_id_1</li>
+														<li> IMU_TOP_id_2</li>
+														<li> IMU_TOP_id_3</li>
+														<li> IMU_TOP_id_4</li>
+														<li> IMU_TOP_id_5</li>
+														<li> LIDAR_TOP_id_0</li>
+														<li> LIDAR_TOP_id_1</li>
+														<li> LIDAR_TOP_id_2</li>
+														<li> LIDAR_TOP_id_3</li>
+														<li> LIDAR_TOP_id_4</li>
+														<li> LIDAR_TOP_id_5</li>
+														<li> SEG_BACK_id_1</li>
+														<li> SEG_BACK_id_2</li>
+														<li> SEG_BACK_id_3</li>
+														<li> SEG_BACK_id_4</li>
+														<li> SEG_BACK_id_5</li>
+														<li> SEG_BACK_LEFT_id_1</li>
+														<li> SEG_BACK_LEFT_id_2</li>
+														<li> SEG_BACK_LEFT_id_3</li>
+														<li> SEG_BACK_LEFT_id_4</li>
+														<li> SEG_BACK_LEFT_id_5</li>
+														<li> SEG_BACK_RIGHT_id_1</li>
+														<li> SEG_BACK_RIGHT_id_2</li>
+														<li> SEG_BACK_RIGHT_id_3</li>
+														<li> SEG_BACK_RIGHT_id_4</li>
+														<li> SEG_BACK_RIGHT_id_5</li>
+														<li> SEG_FRONT_id_1</li>
+														<li> SEG_FRONT_id_2</li>
+														<li> SEG_FRONT_id_3</li>
+														<li> SEG_FRONT_id_4</li>
+														<li> SEG_FRONT_id_5</li>
+														<li> SEG_FRONT_LEFT_id_1</li>
+														<li> SEG_FRONT_LEFT_id_2</li>
+														<li> SEG_FRONT_LEFT_id_3</li>
+														<li> SEG_FRONT_LEFT_id_4</li>
+														<li> SEG_FRONT_LEFT_id_5</li>
+														<li> SEG_FRONT_RIGHT_id_1</li>
+														<li> SEG_FRONT_RIGHT_id_2</li>
+														<li> SEG_FRONT_RIGHT_id_3</li>
+														<li> SEG_FRONT_RIGHT_id_4</li>
+														<li> SEG_FRONT_RIGHT_id_5</li>
+														<li> SEG_id_0_0</li>
+														<li> SEG_id_0_1</li>
+														<li> SEG_id_0_2</li>
+														<li> SEG_id_0_3</li>
+														<li> SEMLIDAR_TOP_id_0</li>
+														<li> SEMLIDAR_TOP_id_1</li>
+														<li> SEMLIDAR_TOP_id_2</li>
+														<li> SEMLIDAR_TOP_id_3</li>
+														<li> SEMLIDAR_TOP_id_4</li>
+														<li>SEMLIDAR_TOP_id_5</li>
+
+													</ul>
+												</li>
+												<li>
+													<div class="listree-submenu-heading">v1.0-mini</div>
+													<ul class="listree-submenu-items">
+														<li> attribute.json</li>
+														<li> calibrated_sensor.json</li>
+														<li> category.json</li>
+														<li> ego_pose.json</li>
+														<li> instance.json</li>
+														<li> lidarseg.json</li>
+														<li> log.json</li>
+														<li> map.json</li>
+														<li> sample_annotation.json</li>
+														<li> sample_data.json</li>
+														<li> sample.json</li>
+														<li> scene.json</li>
+														<li> sensor.json</li>
+														<li>visibility.json</li>
+													</ul>
+												</li>
+											</ul>
+											</li>
+
+										</ul>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px" class="no-bullets">
+											<li><a
+													href="https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa?usp=sharing">US</a>
+											</li>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px" class="no-bullets">
+											<!-- <li><b>Size</b> -->
+											<li>519 GB</li>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+									<ul style="font-size:16px">
+										<li><b>Parsed datasets for detection and segmentation & model checkpoints</b>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+									<ul style="font-size:16px" class="no-bullets">
+										<li><a
+												href="https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing">US</a>
+										</li>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+						<br>
+
+						<p style="font-size:16px"> If you find the dataset helpful, please consider citing us.</p>
+
+						<p style="font-size:16px">
+							@InProceedings{Li_2021_NeurIPS, <br>
+							&emsp;&emsp;&emsp;&emsp;title = {Learning Distilled Collaboration Graph for Multi-Agent
+							Perception}, <br>
+							&emsp;&emsp;&emsp;&emsp;author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen,
+							Siheng and Feng, Chen and Zhang, Wenjun}, <br>
+							&emsp;&emsp;&emsp;&emsp;booktitle = {Thirty-fifth Conference on Neural Information
+							Processing Systems (NeurIPS 2021)}, <br>
+							&emsp;&emsp;&emsp;&emsp;year = {2021} <br>
+							}
+							<br>
+							@InProceedings{Li_2021_ICCVW,<br>
+							&emsp;&emsp;&emsp;&emsp;title = {V2X-Sim: A Virtual Collaborative Perception Dataset for
+							Autonomous Driving},<br>
+							&emsp;&emsp;&emsp;&emsp;author = {Li, Yiming and An, Ziyan and Wang, Zixun and Zhong, Yiqi
+							and Chen, Siheng and Feng, Chen},<br>
+							&emsp;&emsp;&emsp;&emsp;booktitle = {Proceedings of the IEEE/CVF International Conference on
+							Computer Vision Workshops (ICCVW)},<br>
+							&emsp;&emsp;&emsp;&emsp;year = {2021}<br>
+							}
+						</p>
+
+					</div>
+
+
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+
+			</div>
+		</section>
+
+
+	</div>
+
+	<footer>
+		<div id="sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="copyright">
+							<p><span>&copy; NYU AI4CE Lab 2021 All rights reserved.
+								</span> </p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<ul class="social-network">
+							<li>
+								<a class="fa fa-github" data-placement="top" href="https://github.com/ai4ce/V2X-Sim"
+									style="font-style: italic" title="GitHub"></a>
+							</li>
+							<li>
+								<a class="fa fa-external-link" data-placement="top" href="https://ai4ce.github.io/"
+									style="font-style: italic" title="Lab Website"></a>
+							</li>
+
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</footer>
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<!-- javascript
+	</footer>
+	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	<!-- javascript
     ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
-<script src="js/portfolio/jquery.quicksand.js"></script>
-<script src="js/portfolio/setting.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
-<script src="js/custom.js"></script>
-<script src="https://unpkg.com/listree/dist/listree.umd.min.js"></script>
-<script>
-	var coll = document.getElementsByClassName("collapsible-list");
-	var i;
-	
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-		this.classList.toggle("active-list");
-		var content = this.nextElementSibling;
-		if (content.style.maxHeight){
-		  content.style.maxHeight = null;
-		} else {
-		  content.style.maxHeight = content.scrollHeight + "px";
-		} 
-	  });
-	}
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://unpkg.com/listree/dist/listree.umd.min.js"></script>
+	<script>
+		var coll = document.getElementsByClassName("collapsible-list");
+		var i;
 
-	listree();
-</script>
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active-list");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+
+		listree();
+	</script>
 </body>
+
 </html>
