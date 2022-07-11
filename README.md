@@ -12,11 +12,6 @@
 <div align="center">
     <img src="https://s2.loli.net/2022/06/15/cbs6hS2NHT7pDPL.png" height="300">
 </div>
-
-https://user-images.githubusercontent.com/53892579/178347109-dc959d5f-5b0f-454a-8997-0988db200abd.mp4
-
-
-
 <br>
 
 ## News
@@ -83,7 +78,7 @@ V2X-Sim-det / V2X-Sim-seg
 ├── val # validation data
 ├── test # test data
 ```
-
+https://user-images.githubusercontent.com/53892579/178347109-dc959d5f-5b0f-454a-8997-0988db200abd.mp4
 
 ## Requirements
 
@@ -98,7 +93,7 @@ Tested with:
 
 ## Benchmark
 
-We implement when2com, who2com, V2VNet, lowerbound and upperbound benchmark experiments on our datasets. You are welcome to go to [detection](./det), [segmentation](./seg) and [tracking](track) to find them.
+We implement when2com, who2com, V2VNet, lowerbound and upperbound benchmark experiments on our datasets. You are welcome to go to `README` files in [detection](https://github.com/coperception/coperception/tree/master/tools/det), [segmentation](https://github.com/coperception/coperception/tree/master/tools/seg) and [tracking](https://github.com/coperception/coperception/tree/master/tools/track) to find them.
 
 
 
