@@ -15,7 +15,7 @@
 <br>
 
 ## News
-**[2022-07]**  Our paper will be available soon.
+**[2022-07]**  Our paper is available at [arxiv](https://arxiv.org/pdf/2202.08449.pdf).
 
 **[2022-06]**  🔥 V2X-Sim is accepted at **IEEE Robotics and Automation Letters (RA-L)**.
 
@@ -112,7 +112,7 @@ If you find V2XSIM useful in your research, please cite:
 
 ```tex
 @article{Li_2021_RAL,
-    title = {V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving},
+    title = {V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving},
     author = {Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
     booktitle = {IEEE Robotics and Automation Letters},
     year = {2022}
