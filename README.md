@@ -1,4 +1,4 @@
-# V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving
+# V2X-Sim: A Virtual Collaborative Perception Dataset and Benchmark for Autonomous Driving [RA-L 2022]
 
 [Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Dekun Ma](https://dekun.me), [Ziyan An](https://ziyanan.github.io/), [Zixun Wang](), [Yiqi Zhong](https://www.linkedin.com/in/yiqi-zhong-078548129), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
 
