@@ -43,7 +43,7 @@ datasets become widely available.
 ## Dataset
 
 Download links:
-- Original dataset: [Google Drive (US)](https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa)  
+- Original dataset (you are going to parse this dataset yourself with `create_data.py` scripts for specific tasks): [Google Drive (US)](https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa)  
 - Parsed datasets for detection and segmentation tasks and model checkpoints: [Google Drive (US)](https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing)   
 
 You could find more detailed documents on our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
@@ -78,7 +78,13 @@ V2X-Sim-det / V2X-Sim-seg
 ├── val # validation data
 ├── test # test data
 ```
-https://user-images.githubusercontent.com/53892579/178347109-dc959d5f-5b0f-454a-8997-0988db200abd.mp4
+
+
+https://user-images.githubusercontent.com/53892579/180342204-1697f102-5f69-45d1-a62e-9460f4628fb8.mp4
+
+https://user-images.githubusercontent.com/53892579/180342351-ef58e302-9bcb-47fa-a80f-1fe49ee80152.mp4
+
+https://user-images.githubusercontent.com/53892579/180341986-1389ba9a-2bab-427f-8873-7cd7cba38fbe.mp4
 
 ## Requirements
 
@@ -110,7 +116,7 @@ We are very grateful to multiple great opensourced codebases, without which this
 
 If you find V2XSIM useful in your research, please cite:
 
-```tex
+```bibtex
 @article{Li_2021_RAL,
     title = {V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving},
     author = {Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
