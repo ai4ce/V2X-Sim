@@ -117,11 +117,15 @@ We are very grateful to multiple great opensourced codebases, without which this
 If you find V2XSIM useful in your research, please cite:
 
 ```bibtex
-@article{Li_2021_RAL,
-    title = {V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving},
-    author = {Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
-    journal = {IEEE Robotics and Automation Letters},
-    year = {2022}
+@article{li2022v2x,
+  title={V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving},
+  author={Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={4},
+  pages={10914--10921},
+  year={2022},
+  publisher={IEEE}
 }
 ```
 
