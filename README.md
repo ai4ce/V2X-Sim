@@ -44,7 +44,7 @@ datasets become widely available.
 
 Download links:
 - Original dataset (you are going to parse this dataset yourself with `create_data.py` scripts for specific tasks): [Google Drive (US)](https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa)  
-- Parsed datasets for detection and segmentation tasks and model checkpoints: [Google Drive (US)](https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing)   
+- preprocessed datasets for detection and segmentation tasks and model checkpoints: [Google Drive (US)](https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing)   
 
 You could find more detailed documents on our [website](https://ai4ce.github.io/V2X-Sim/index.html)!
 
