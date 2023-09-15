@@ -6,7 +6,6 @@
 
 [![arXiv](https://img.shields.io/badge/Website-V2X--Sim-blue)](https://ai4ce.github.io/V2X-Sim/) 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)
-[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![GitLab issues total](https://badgen.net/github/issues/ai4ce/V2X-Sim)](https://gitlab.com/ai4ce/V2X-Sim/issues)
 [![GitHub stars](https://img.shields.io/github/stars/ai4ce/V2X-Sim.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ai4ce/V2X-Sim/stargazers/)
 <div align="center">
